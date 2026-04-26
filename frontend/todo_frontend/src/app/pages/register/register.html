@@ -1,0 +1,33 @@
+<div class="p-4 dark:bg-gray-700">
+    <app-switch-theme></app-switch-theme>
+</div>
+
+<div class="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-700">
+  <div class="p-6 bg-indigo-950 rounded-2xl shadow-2xl text-center w-4/12 dark:bg-gray-900">
+
+    <p class="pt-4 pb-8 text-4xl font-bold text-white">Iniciar Sesión</p>
+
+    <div class="px-4 py-2">
+      <input [value]="name()" (input)="name.set($event.target.value)" type="text" placeholder="Escribe tu nombre" class="block w-full rounded border-0 py-3 pl-11 pr-4 transition duration-150 ease-in-out shadow-inner bg-white text-black placeholder:text-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400" />
+    </div>
+
+    <div class="px-4 py-2">
+      <input [value]="email()" (input)="email.set($event.target.value)" type="email" placeholder="Escribe tu email" class="block w-full rounded border-0 py-3 pl-11 pr-4 transition duration-150 ease-in-out shadow-inner bg-white text-black placeholder:text-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400" />
+    </div>
+
+    <div class="p-4 py-2">
+      <input [value]="password()" (input)="password.set($event.target.value)" type="password" placeholder="Escribe tu contraseña" class="block w-full rounded border-0 py-3 pl-11 pr-4 transition duration-150 ease-in-out shadow-inner bg-white text-black placeholder:text-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400" />
+    </div>
+
+    <div class="p-4 py-2">
+      <button (click)="register()" class="bg-teal-700 rounded p-4 w-full active:bg-teal-800 active:scale-[0.995]">
+        Registrate
+      </button>
+    </div>
+
+    <div class="p-4 py-2 text-white">
+        <p>¿Ya tienes una cuenta? <a href="/" class="text-blue-500 hover:text-blue-700 underline hover:no-underline transition-colors">Inicia Sesión</a></p>
+    </div>
+  </div>
+</div>
+

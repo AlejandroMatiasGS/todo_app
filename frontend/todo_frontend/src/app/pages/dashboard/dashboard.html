@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+<div class="px-8 py-4 justify-end flex dark:bg-gray-700">
+    
+    <button type="button" class="active:scale-[0.970] me-2" (click)="taskModalSer.open()">
+        <lucide-icon name="circle-plus" size="64"
+            color="#1a0778"></lucide-icon> 
+    </button>
+    
+    <button type="button" class="active:scale-[0.970]" (click)="taskService.delete()">
+        <lucide-icon name="trash-2" size="64"
+            color="#ae2d2d"></lucide-icon>
+    </button>
+    
+</div>
+
+<div class="px-6 py-12 w-full h-screen bg-gray-100 dark:bg-gray-700 grid grid-cols-4 gap-4 content-start
+        border border-black dark:border-white rounded-lg">
+    @for (t of taskService.tasks(); track t) {
+        <app-task [task]="t"></app-task>
+    }
+</div>
+
+<app-task-modal>
+</app-task-modal>

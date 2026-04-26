@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* styles.css */
+
+/* Éxito */
+[data-sonner-toast][data-type="success"] {
+    background: #079268 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+/* Error */
+[data-sonner-toast][data-type="error"] {
+    background: #c43434 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+/* Warning */
+[data-sonner-toast][data-type="warning"] {
+    background: #c6660c !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+/* Info */
+[data-sonner-toast][data-type="info"] {
+    background: #1a1e2e !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}

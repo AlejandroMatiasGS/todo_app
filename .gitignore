@@ -1,0 +1,82 @@
+# Dependencias
+backend/todo_backend/node_modules/
+
+# Build
+backend/todo_backend/dist/
+backend/todo_backend/build/
+
+# Logs
+backend/todo_backend/logs/
+backend/todo_backend/*.log
+backend/todo_backend/npm-debug.log*
+backend/todo_backend/yarn-debug.log*
+backend/todo_backend/yarn-error.log*
+backend/todo_backend/pnpm-debug.log*
+
+# Archivos del sistema
+backend/todo_backend/.DS_Store
+backend/todo_backend/Thumbs.db
+
+# IDEs / editores
+backend/todo_backend/.vscode/
+backend/todo_backend/.idea/
+backend/todo_backend/*.swp
+backend/todo_backend/*.swo
+
+# Coverage (tests)
+backend/todo_backend/coverage/
+
+# Archivos temporales
+backend/todo_backend/tmp/
+backend/todo_backend/temp/
+
+# Archivos de TypeScript
+backend/todo_backend/*.tsbuildinfo
+
+# Prisma (si usas)
+backend/todo_backend/prisma/migrations/
+
+# Docker (opcional)
+backend/todo_backend/docker-compose.override.yml
+
+# Uploads (opcional)
+backend/todo_backend/uploads/
+
+
+#FRONTENND
+
+# Dependencias
+backend/todo_backend/node_modules/
+
+# Build Angular
+backend/todo_backend/dist/
+backend/todo_backend/.angular/
+
+# Logs
+backend/todo_backend/*.log
+backend/todo_backend/npm-debug.log*
+backend/todo_backend/yarn-debug.log*
+backend/todo_backend/yarn-error.log*
+
+# Archivos del sistema
+backend/todo_backend/.DS_Store
+backend/todo_backend/Thumbs.db
+
+# IDEs / editores
+backend/todo_backend/.vscode/
+backend/todo_backend/.idea/
+backend/todo_backend/*.swp
+backend/todo_backend/*.swo
+
+# Coverage
+backend/todo_backend/coverage/
+
+# Archivos temporales
+backend/todo_backend/tmp/
+backend/todo_backend/temp/
+
+# Cache Angular
+backend/todo_backend/.cache/
+
+# TypeScript
+backend/todo_backend/*.tsbuildinfo
